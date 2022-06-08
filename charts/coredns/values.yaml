@@ -14,8 +14,7 @@ image:
   #   - myRegistryKeySecretName
 
 replicaCount: 1
-nameOverride: kube-dns
-enableService: false
+k8sAppName:
 
 resources:
   limits:
@@ -68,6 +67,7 @@ prometheus:
     interval: ""
 
 service:
+  enabled: true
 # clusterIP: ""
 # loadBalancerIP: ""
 # externalIPs: []
